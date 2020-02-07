@@ -1,3 +1,97 @@
 html {
-    background-color: blue;
+    background-color:lightgray;
 }
+
+.game_stats {
+    
+}
+
+#title {
+  text-align:center;  
+}
+
+#game_board {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    /* grid-gap: 3%; */
+    
+    
+    
+    /* background-color: lightsalmon; */
+}
+
+.play_button {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+  
+}
+
+#square1 {
+    background-color: red;
+    
+}
+
+#square1:active:hover {
+    background-color: #ff6666;
+}
+
+#square2 {
+
+    background-color: yellow;
+   
+}
+
+#square2:active:hover {
+
+    background-color: #ffff66;
+   
+}
+
+#square3 {
+    background-color: green;
+}
+
+#square3:active:hover {
+
+    background-color: #66ff66;
+   
+}
+
+
+#square4 {
+
+    background-color:blue;
+    
+}
+
+#square4:active:hover {
+
+    background-color:#6666ff;
+    
+}
+
+#square5 {
+    background-color: orange;
+    
+}
+
+#square5:active:hover {
+    background-color: #ffc966;
+    
+}
+
+#square6 {
+    background-color: purple;
+}
+
+#square6:active:hover {
+    background-color: purple;
+    background-color: #ff66ff;
+}
+
+
+
+
+
