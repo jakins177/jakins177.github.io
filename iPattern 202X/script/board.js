@@ -4,6 +4,10 @@ const SQAURE_AMOUNT = 6;
 
 const COMPUTER_SQUARE_PRESSED_TIME = 2000;
 
+let gameOn = false;
+
+let theHuman = new Human();
+
 let timePressed;
 class Playbutton {
   constructor(buttonID, color, clickColor) {
@@ -42,13 +46,10 @@ startPress(){
 
 class Computer {
     constructor(){
-      this.hp = 20;
+  
       this.patternSequence = [];
-
-      console.log("the ")
+    
     }
-
-
     addSequence() {
         let randomIndex = Math.floor(Math.random() * SQAURE_AMOUNT);
         this.patternSequence.push(randomIndex); 
@@ -57,10 +58,29 @@ class Computer {
 
 }
 
+class Human {
+  constructor(){
+
+    this.patternSequence = [];
+  
+  }
+  addSequence(squareNumberIndex) {
+      
+      this.patternSequence.push(squareNumberIndex); 
+  }
+
+
+}
+
+function compareHumanAndComputer()
+{
+  //TO DO
+}
+
 //6 event handlers to detect if game button is pressed 
  
 let boardButton1 = new Playbutton("#square1", "red", "#ff6666");
-let boardButton2 = new Playbutton("#square2", "yellow", "#ffff66");
+let boardButton2 = new Playbutton("#square2", "yellow", "#ffffb3");
 let boardButton3 = new Playbutton("#square3", "green", "#66ff66");
 let boardButton4 = new Playbutton("#square4", "blue", "#6666ff");
 let boardButton5 = new Playbutton("#square5", "orange", "#ffc966");
@@ -69,6 +89,12 @@ let boardButton6 = new Playbutton("#square6", "purple", "#ff66ff");
  
   $( boardButton1.buttonID ).click(function() {
   ///alert( "square1" );
+  if(gameOn)
+  {
+    theHuman.addSequence(0);
+  }
+
+
   });
 
   $( boardButton2.buttonID ).click(function() {
@@ -91,21 +117,24 @@ let boardButton6 = new Playbutton("#square6", "purple", "#ff66ff");
     //alert( "square6" );
   });
 
-  let theComputer = new Computer();
+  $( "#start_game_button" ).click(function() {
+    //alert( "start game clicked" );
+    $("#start_game_button").css("display", "none");
+      startGame();
+      
+  });
+
 
  function startGame()
   {
+    gameOn = true;
     let theComputer = new Computer();
+    
 
     theComputer.addSequence();
-    theComputer.addSequence();
-    theComputer.addSequence();
-    theComputer.addSequence();
-    theComputer.addSequence();
-    theComputer.addSequence();
-    theComputer.addSequence();
+  
 
-   let setSecondsInterval = 3000;
+   let setSecondsInterval = 2000;
    
     // for(item of theComputer.patternSequence)
     // {
@@ -116,10 +145,6 @@ let boardButton6 = new Playbutton("#square6", "purple", "#ff66ff");
     // }
 
     //let myArray = [1,2,3,4,5,6,7];
-
-
-`   `
-
 
 
     let toggle = true;
@@ -163,7 +188,9 @@ let boardButton6 = new Playbutton("#square6", "purple", "#ff66ff");
   // boardButton2.startPress();
   // }
 
-  flashBoardButton.startPress();
+  setTimeout(function(){ flashBoardButton.startPress(); }, 500);
+
+
   setTimeout(function () {
     console.log(sequenceNumber);
    // $("#square3").click();
@@ -182,7 +209,7 @@ let boardButton6 = new Playbutton("#square6", "purple", "#ff66ff");
 
 
   
-  startGame();
+ // startGame();
 
 
 

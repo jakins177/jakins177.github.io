@@ -21,6 +21,10 @@ html {
     /* background-color: lightsalmon; */
 }
 
+#start_button_div {
+    text-align: center;
+}
+
 .play_button {
     width: 150px;
     height: 150px;
@@ -45,8 +49,8 @@ html {
 
 #square2:active:hover {
 
-    background-color: #ffff66;
-   
+    /* background-color: #ffff66; */
+    background-color:  #ffffb3;
 }
 
 #square3 {
