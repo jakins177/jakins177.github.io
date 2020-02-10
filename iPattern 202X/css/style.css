@@ -37,9 +37,9 @@ html {
     
 }
 
-#square1:active:hover {
+/* #square1:active:hover {
     background-color: #ff6666;
-}
+} */
 
 #square2 {
 
@@ -47,21 +47,21 @@ html {
    
 }
 
-#square2:active:hover {
+/* #square2:active:hover {
 
-    /* background-color: #ffff66; */
+   
     background-color:  #ffffb3;
-}
+} */
 
 #square3 {
     background-color: green;
 }
 
-#square3:active:hover {
+/* #square3:active:hover {
 
     background-color: #66ff66;
    
-}
+} */
 
 
 #square4 {
@@ -70,30 +70,30 @@ html {
     
 }
 
-#square4:active:hover {
+/* #square4:active:hover {
 
     background-color:#6666ff;
     
-}
+} */
 
 #square5 {
     background-color: orange;
     
 }
 
-#square5:active:hover {
+/* #square5:active:hover {
     background-color: #ffc966;
     
-}
+} */
 
 #square6 {
     background-color: purple;
 }
 
-#square6:active:hover {
+/* #square6:active:hover {
   
     background-color: #ff66ff;
-}
+} */
 
 
 
