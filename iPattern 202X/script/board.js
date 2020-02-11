@@ -217,7 +217,7 @@ $(boardButton1.buttonID).mouseup(function () {
 
 $(boardButton2.buttonID).mousedown(function () {
   // console.log("the mouse is down");
-  document.getElementById('button_audio').src = "../audio/yellowsound.mp3";
+  document.getElementById('button_audio').src = "/audio/yellowsound.mp3";
   document.getElementById('button_audio').play();
   boardButton2.setCurrentColor(boardButton2.clickColor);
 
