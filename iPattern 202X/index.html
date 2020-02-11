@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,30 +10,38 @@
 
   <title>iPattern 202x</title>
 </head>
+
 <body>
 
   <div id="outer_wrapper">
-    <div id ="title"><h1>iPattern 202x</h1></div>
-   <div id ="game_stats" >stats</div>
-  
-   <div id = "game_board">
-     <div class = "play_button" id = "square1"></div>
-     <div class = "play_button" id = "square2"></div>
-     <div class = "play_button" id = "square3"></div>
-     <div class = "play_button" id = "square4"></div>
-     <div class = "play_button" id = "square5"></div>
-     <div class = "play_button" id = "square6"></div>
-     
-   </div>
+    <audio id="button_audio" src="" preload="auto"></audio>
+    <div id="title">
+      <h1>iPattern 202x</h1>
+    </div>
+    <div id="game_stats"></div>
 
-   <div id = "start_button_div">
-    <br>
-    <input id="start_game_button" type="button" value="Start Game"/>
-    
-   </div>
+    <div id="game_board">
+      <div class="play_button" id="square1"></div>
+      <div class="play_button" id="square2"></div>
+      <div class="play_button" id="square3"></div>
+      <div class="play_button" id="square4"></div>
+      <div class="play_button" id="square5"></div>
+      <div class="play_button" id="square6"></div>
+
+    </div>
+
+    <div id="start_button_div">
+      <br>
+      <input id="start_game_button" type="button" value="Start Game" />
+
+    </div>
 
   </div>
 
+
+  <h2 id="demo"></h2>
+
   <script type="text/javascript" src="script/board.js"></script>
 </body>
+
 </html>
